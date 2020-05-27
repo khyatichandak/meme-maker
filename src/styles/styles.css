@@ -1,0 +1,38 @@
+*{
+    border-radius: 0px !important;
+}
+.content{
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1, h2{
+    -webkit-text-stroke: 2px black;
+    color:white;
+}
+.result img{
+    height:150px;
+}
+.top-text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom-text{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    margin: 0px 5px;
+}
+.form__inputs{
+    margin-top: 15px;
+}
+.row{
+    margin:20px 0px 0px 0px;
+}
