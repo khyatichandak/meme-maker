@@ -6,17 +6,12 @@ const ImageSection = (props) => {
     backgroundImage: `url(${props.activeImage})`,
   };
   return (
-    <Col md={{ span: 8 }}>
-      <div
-        className="content"
-        ref={props.contentContainerRef}
-        style={background}
-      >
-        {/* <img src={props.activeImage} alt="meme"></img> */}
-        <h1 className="top-text">{props.topText}</h1>
-        <h1 className="bottom-text">{props.bottomText}</h1>
-      </div>
-    </Col>
+    <div className="content" ref={props.contentContainerRef} style={background}>
+      <h1 className="top-text" draggable>
+        {props.topText}
+      </h1>
+      <h1 className="bottom-text">{props.bottomText}</h1>
+    </div>
   );
 };
 

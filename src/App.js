@@ -82,8 +82,9 @@ function App() {
         handleImageInputChange={handleImageInputChange}
         handleMemeReset={handleMemeReset}
         isMemeGenerated={isMemeGenerated}
+        resultContainerRef={resultContainerRef}
       />
-      <Result resultContainerRef={resultContainerRef} />
+      {/* <Result resultContainerRef={resultContainerRef} /> */}
     </>
   );
 }

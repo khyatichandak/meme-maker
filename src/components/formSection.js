@@ -2,10 +2,10 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
-
+import Result from "./result";
 const FormSection = (props) => {
   return (
-    <Col md={{ span: 4 }} className="pull-right">
+    <>
       <div className="form__inputs">
         <Form.Group>
           <Form.Control
@@ -41,7 +41,6 @@ const FormSection = (props) => {
       <Button variant="info" onClick={props.handleMemeGeneration}>
         Generate Meme
       </Button>
-
       <Button
         variant="danger"
         onClick={props.handleMemeReset}
@@ -49,8 +48,8 @@ const FormSection = (props) => {
       >
         Reset
       </Button>
-      {/* </div> */}
-    </Col>
+      <Result resultContainerRef={props.resultContainerRef} />
+    </>
   );
 };
 
