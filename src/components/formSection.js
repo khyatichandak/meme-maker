@@ -25,16 +25,20 @@ const FormSection = (props) => {
           />
         </Form.Group>
       </div>
-      <Form>
-        <div className="mb-3">
-          <Form.File id="formcheck-api-custom" custom>
-            <Form.File.Input isValid accept=".jpg, .jpeg, .png" />
-            <Form.File.Label data-browse="Upload Image">
-              .jpg, .jpeg, .png
-            </Form.File.Label>
-          </Form.File>
-        </div>
-      </Form>
+      <label variant="light" htmlFor="fileInput" className="btn btn-light">
+        Upload Image
+        <input
+          id="fileInput"
+          name="fileInput"
+          type="file"
+          accept=".jpg, .jpeg, .png"
+          onChange={props.handleImageInputChange}
+          hidden
+        />
+      </label>{" "}
+      (.jpg, .jpeg, .png)
+      <br></br>
+      <br></br>
       <Button variant="success" onClick={props.handleImageChange}>
         Change Image
       </Button>
