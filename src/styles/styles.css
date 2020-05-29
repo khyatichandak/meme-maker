@@ -3,31 +3,33 @@
 }
 .content{
     text-align: center;
-    height: 80vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    border:solid 2px black;
 }
 h1, h2{
     -webkit-text-stroke: 2px black;
     color:white;
 }
+.content img{
+    max-width: 100%;
+    border:solid 2px black;
+}
 .result img{
     height:150px;
     border:solid 1px black;
 }
-.top-text{
+.top-text, .bottom-text{
     position: absolute;
-    top: 20%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
+.top-text{
+    top: 10%;
+    left: 35%;    
+}
 .bottom-text{
-    position: absolute;
     top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 35%;
 }
 button{
     margin: 0px 5px;

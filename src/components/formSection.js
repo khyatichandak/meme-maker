@@ -6,6 +6,7 @@ import Result from "./result";
 const FormSection = (props) => {
   return (
     <>
+      Drag Text to reset position
       <div className="form__inputs">
         <Form.Group>
           <Form.Control
